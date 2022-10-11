@@ -1,0 +1,25 @@
+h1{
+    margin-left: 500px;
+    margin-right: 560px;
+    background-color: white;
+}
+
+h2{
+    margin-left: 570px;
+    margin-right: 635px;
+    background-color: white;
+}
+
+h3{
+    margin-left: 570px;
+    margin-right: 630px;
+    background-color: white;
+}
+
+button{
+    margin-left: 590px;
+}
+
+button:hover{
+    background: #A7FFE4;
+}

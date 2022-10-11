@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background camaleón</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body id = "color">
+    <h1 id = "titulo">Background color</h1>
+    <h3>color actual: </h3>
+    <h2 id = "no_color"></h2>
+
+    <button onclick = "cambiar()">cambiar</button>
+
+    <script>
+        function cambiar(){
+            var color = '#';
+            var simbolos = "0123456789ABCDEF";
+            var aux = '#FAF7F0';
+            var aux2 = '#000000';
+
+            for(var i = 0; i < 6; i++){
+                color = color + simbolos[Math.floor(Math.random()*16)];
+            }
+            document.body.style.background = color;
+            document.getElementById("no_color").innerHTML = color;
+        }
+    </script>
+</body>
+</html>
